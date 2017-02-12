@@ -1,0 +1,141 @@
+nav{
+  z-index: 1000;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  background-color: #232323;
+  border: 0;
+  border-radius: 0;
+  z-index: 1001;
+  padding-top:28%;
+}
+.navToggle {
+  height: 100%;
+  width: 310px;
+  position: fixed;
+  background-color: #282828;
+  margin-left: 60px;
+  display: none;
+}
+#navIcon {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  cursor: pointer;
+}
+#navIcon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background: #e5e5e5;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+#navIcon span:nth-child(1) {
+  top: 22px;
+  left: 15px;
+}
+#navIcon span:nth-child(2), 
+#navIcon span:nth-child(3) {
+  top: 32px;
+  left: 15px;
+}
+#navIcon span:nth-child(4) {
+  top: 42px;
+  left: 15px;
+}
+#navIcon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+#navIcon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#navIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#navIcon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+div.navExpanded {
+  display: block;
+}
+.navMenu img {
+  width: 110px;
+  margin-left: 43px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: block;
+}
+.navMenu a {
+  font-family: 'raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  display: block;
+  z-index: 1005;
+}
+.navMenu a:hover {
+  border-left: solid 3px #f26822;
+  padding-left: 12px;
+  color: #fff;
+}
+.navIcons {
+  margin-left: 42px;
+  position: fixed;
+  bottom: 30px;
+}
+.navIcons img {
+  width: 32px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.logo {
+  display: inline-block;
+  z-index: 999;
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+.logo img {
+  width: 110px;
+}
