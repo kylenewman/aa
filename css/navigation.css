@@ -40,10 +40,10 @@ nav{
 #navIcon span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 30px;
   background: #e5e5e5;
-  border-radius: 9px;
+  border-radius: 15px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -79,23 +79,23 @@ nav{
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+#navIcon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
 #navIcon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-#navIcon.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
 div.navExpanded {
   display: block;
 }
-.navMenu img {
+.navToggle img {
   width: 110px;
-  margin-left: 43px;
+  margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 100px;
   display: block;
@@ -108,7 +108,7 @@ div.navExpanded {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 4px;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-bottom: 30px;
   padding-left: 15px;
   display: block;
@@ -121,21 +121,134 @@ div.navExpanded {
 }
 .navIcons {
   margin-left: 42px;
-  position: fixed;
+  position: absolute;
   bottom: 30px;
+  display: inline;
 }
 .navIcons img {
-  width: 32px;
-  margin-right: 8px;
+  width: 28px;
+  margin: 0 4px;
   display: inline-block;
+}
+.navOverlay {
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(60,60,60,0.75);
+  position: absolute;
+  line-height: 100vh;
+  text-align: center;
+  display: none;
 }
 .logo {
   display: inline-block;
   z-index: 999;
   position: absolute;
-  top: 30px;
-  left: 90px;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -88.5px;
+  opacity: 0.75;
 }
 .logo img {
-  width: 110px;
+  width: 350px;
 }
+.navMobile {
+  display: none;
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+  z-index: 898;
+  background-color: rgba(60,60,60,0.25);
+  position: absolute;
+  line-height: 100vh;
+  text-align: center;
+}
+
+/***** responsive *****/
+
+@media all and (max-width: 768px) {
+  .nav {
+    height: 50px;
+    width: 100%;
+    padding-top: 0;
+  }
+  #navIcon {
+    top: 0;
+    right: 8%;
+    height: 35px;
+    width: 35px;
+  }
+  #navIcon span:nth-child(1) {
+  top: 15px;
+  left: 15px;
+  }
+  #navIcon span:nth-child(2), 
+  #navIcon span:nth-child(3) {
+    top: 25px;
+    left: 15px;
+  }
+  #navIcon span:nth-child(4) {
+    top: 35px;
+    left: 15px;
+  }
+  #navIcon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  #navIcon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #navIcon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .navMenu img {
+    display: none;
+  }
+  .navToggle {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navMenu {
+    margin: 0 auto;
+    margin-top: 125px;
+  }
+  .navMenu a {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .navMenu a:hover {
+    color: #f26822;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .navIcons {
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    bottom: 30px;
+    display: inline;
+  }
+  .logo {
+    z-index: 2000;
+    top: 10px;
+    left: 3%;
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+  }
+  .logo img {
+    width: 60px;
+  }
+}
+
+
