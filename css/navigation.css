@@ -140,17 +140,17 @@ div.navExpanded {
   text-align: center;
   display: none;
 }
-.logo {
+.sliderLogo {
   display: inline-block;
   z-index: 999;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-left: -175px;
-  margin-top: -88.5px;
+  margin-top: -106px;
   opacity: 0.75;
 }
-.logo img {
+.sliderLogo img {
   width: 350px;
 }
 .navMobile {
@@ -164,6 +164,9 @@ div.navExpanded {
   position: absolute;
   line-height: 100vh;
   text-align: center;
+}
+.logo {
+  display: none;
 }
 
 /***** responsive *****/
@@ -209,7 +212,7 @@ div.navExpanded {
     width: 0%;
     left: 50%;
   }
-  .navMenu img {
+  .navToggle img {
     display: none;
   }
   .navToggle {
@@ -236,7 +239,12 @@ div.navExpanded {
     margin-left: -90px;
     position: absolute;
     bottom: 30px;
-    display: inline;
+    display: inline-block;
+  }
+  .navIcons img {
+    width: 28px;
+    margin: 0 4px;
+    display: inline-block;
   }
   .logo {
     z-index: 2000;
@@ -245,9 +253,21 @@ div.navExpanded {
     margin-left: 0;
     margin-top: 0;
     opacity: 1;
+    position: absolute;
+    display: inline-block;
   }
   .logo img {
     width: 60px;
+  }
+  .sliderLogo {
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -106px;
+    opacity: 0.75;
+  }
+  .sliderLogo img {
+    width: 250px;
   }
 }
 
