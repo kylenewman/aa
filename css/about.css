@@ -11,16 +11,18 @@
 }
 .aboutInfo h3,
 .aboutInfo h6 {
-  color: #3c3c3c;
-  font-family: 'raleway', sans-serif;
   margin-left: 15px;
 }
 .aboutInfo h3 {
-  font-weight: 600;
+  font-family: 'dosis', sans-serif;
+  font-weight: 400;
   font-size: 45px;
+  color: #232323;
 }
 .aboutInfo h6 {
+  font-family: 'open sans', sans-serif;
+  font-size: 24px;
+  line-height: 35px;
   font-weight: 200;
-  font-size: 30px;
-  line-height: 45px;
+  color: #3c3c3c;
 }

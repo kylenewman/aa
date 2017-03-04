@@ -253,7 +253,7 @@ div.navExpanded {
     margin-left: 0;
     margin-top: 0;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     display: inline-block;
   }
   .logo img {

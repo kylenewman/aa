@@ -1,0 +1,121 @@
+
+
+.blogRow:nth-of-type(even) {
+  background-color: #f8f8f8;
+}
+.blogContain {
+  margin-left: 60px;
+}
+.blogImg {
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.img062093 {
+  background-image: url(../img/img_1.jpg);
+}
+.img061593 {
+  background-image: url(../img/img_3.jpg)
+}
+.blogImg h3 {
+  width: 50%;
+  height: 12.5vh;
+  margin-top: 35.5vh;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  font-family: 'raleway', sans-serif;
+  font-weight: 200;
+  letter-spacing: 4px;
+  font-size: 40px;
+  padding-left: 45px;
+  text-shadow: 1px 1px 2px #232323;
+}
+.blogInfo {
+  height: 40vh;
+  margin-top: 5vh;
+  font-family: 'raleway', sans-serif;
+  padding: 0 50px 0 55px;
+}
+.blogInfo h5 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #232323;
+  text-transform: uppercase;
+}
+.blogInfo h6 {
+  font-size: 18px;
+  color: #b7b7b7;
+  margin-bottom: 25px;
+}
+.blogInfo p {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 200;
+  margin-bottom: 35px;
+  height: 140px;
+  overflow: hidden;
+}
+.blogInfo a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #f26822;
+  padding: 6px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+.blogInfo a:hover {
+  background-color: #3c3c3c;
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+.blogInfo a,
+.blogInfo a:hover,
+.blogInfo a:visited,
+.blogInfo a:active {
+  text-decoration: none;
+}
+
+
+/***** responsive *****/
+
+@media all and (max-width: 768px) {
+  .blogImg {
+    height: 350px;
+    display: block;
+  }
+  .blogInfo {
+    background-color: #fff;
+  }
+  .blogRow:nth-of-type(even) {
+    background-color: #fff;
+  }
+  .blogContain {
+    margin-left: 0px;
+  }
+  .blogInfo {
+    margin-top: 0;
+    padding: 50px 20px;
+    height: auto;
+  }
+  .blogImg {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
