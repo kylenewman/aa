@@ -2,6 +2,12 @@ body {
   font-family: 'raleway', sans-serif;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .contain {
     margin-left: 60px;
 }

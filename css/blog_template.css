@@ -1,0 +1,41 @@
+.blogBanner {
+  background: url(../img/img_5.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 75px;
+}
+.blogAuthorImg {
+  height: 125px;
+  width: 125px;
+  float: right;
+  background: url(../img/moneyshot.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+} 
+.blogAuthor p {
+  text-transform: uppercase;
+  float: right;
+  text-align: right;
+  line-height: 16px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.blogCopy h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.postDate {
+  font-style: italic;
+  color: #b7b7b7;
+  font-size: 20px;
+}
+.blogCopy p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.blogCopy img {
+  width: 100%;
+  margin: 35px 0;
+}

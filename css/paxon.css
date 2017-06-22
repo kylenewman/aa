@@ -1,0 +1,112 @@
+
+ul {
+  z-index: 100;
+}
+.jeff {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.jeff li {
+  position: absolute;
+  background: url(../img/jh_small.png) no-repeat;
+  width: 50px;
+  height: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-animation: rotate 3s linear infinite 0s;
+  -moz-animation: rotateup 3s linear infinite 0s;
+  -o-animation: rotate 3s linear infinite 0s;
+  -ms-animation: rotate 3s linear infinite 0s;
+  animation: rotate 3s linear infinite 0s
+}
+.jeff li:nth-child(odd) {
+  -webkit-transform: translate(50%, 50%);
+}
+
+.jeff li:nth-child(1) { left: 5%; top: 5%; }
+.jeff li:nth-child(2) { left: 27%; top: 5%; }
+.jeff li:nth-child(3) { left: 49%; top: 5%; }
+.jeff li:nth-child(4) { left: 69%; top: 5%; }
+.jeff li:nth-child(5) { left: 90%; top: 5%; }
+.jeff li:nth-child(6) { left: 16%; top: 24%; }
+.jeff li:nth-child(7) { left: 38%; top: 24%; }
+.jeff li:nth-child(8) { left: 59%; top: 24%; }
+.jeff li:nth-child(9) { left: 79%; top: 24%; }
+.jeff li:nth-child(10) { left: 5%; top: 45%; }
+.jeff li:nth-child(11) { left: 27%; top: 45%; }
+.jeff li:nth-child(12) { left: 49%; top: 45%; }
+.jeff li:nth-child(13) { left: 69%; top: 45%; }
+.jeff li:nth-child(14) { left: 90%; top: 45%; }
+.jeff li:nth-child(15) { left: 16%; top: 66%; }
+.jeff li:nth-child(16) { left: 38%; top: 66%; }
+.jeff li:nth-child(17) { left: 59%; top: 66%; }
+.jeff li:nth-child(18) { left: 79%; top: 66%; }
+.jeff li:nth-child(19) { left: 5%; top: 86%; }
+.jeff li:nth-child(20) { left: 27%; top: 86%; }
+.jeff li:nth-child(21) { left: 49%; top: 86%; }
+.jeff li:nth-child(22) { left: 69%; top: 86%; }
+.jeff li:nth-child(23) { left: 90%; top: 86%; }
+
+@-webkit-keyframes rotate {
+ from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  } 
+}
+@-moz-keyframes rotate {
+ from {
+     -moz-transform: rotate(0deg);
+  }
+  to {
+     -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+ from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotate {
+ from {
+    -ms-transform: rotate(180deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+  }
+}
+.jokeBg {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -50;
+  position: absolute;
+  opacity: .95;
+}
+.theShot {
+  z-index: 1000;
+  width: 800px;
+  height: 450px;
+  margin-left: 50%;
+  margin-top: 165px;
+  position: absolute;
+}
+.video {
+  margin-left: -410px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+

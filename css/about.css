@@ -16,13 +16,14 @@
 .aboutInfo h3 {
   font-family: 'dosis', sans-serif;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 65px;
   color: #232323;
+  margin-top: 23%
 }
 .aboutInfo h6 {
   font-family: 'open sans', sans-serif;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 45px;
   font-weight: 200;
   color: #3c3c3c;
 }
